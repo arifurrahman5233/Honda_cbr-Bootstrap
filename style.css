@@ -1,0 +1,51 @@
+.body{
+    margin: 0%;
+    padding: 0%;
+  
+}
+/* header section */
+
+.header-section{
+    background-color: #264653;
+
+}
+.btn{
+    background-color:  rgba(231, 111, 81, 1);
+}
+
+/* main section */
+
+.fetured-bike{
+    margin-top: 70px;
+   
+}
+.collection{
+    color: #E76F51;
+    margin-bottom: 120px;
+}
+.bike-img{
+    filter: grayscale(100%);
+}
+/* .cover{
+    height: 100px;
+    width: 100px;
+    margin:center;
+} */
+.card-group{
+    margin-top: 70px;
+}
+.card-body{
+    align-items: center;
+    
+}
+.star{
+    text-align: center;
+  
+}
+.cheacked{
+    color: #E76F51;
+}
+.happy-client{
+    color: #E76F51;
+    margin-top: 15px;
+}

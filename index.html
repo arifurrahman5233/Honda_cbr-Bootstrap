@@ -8,11 +8,37 @@
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Custom css -->
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/7dd7cdea3c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <header> 
+       <!-- Navbar Section -->
         <section class="header-section">
+          <section class="container">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-end">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#">Shop</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#">News</a>
+                            <a class="nav-link text-white active" aria-current="page" href="#">Contact</a>
+                            <button class="btn text-white button btn-danger" type="submit">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </section>
+          <!-- Banner section  -->
+
             <div class="container d-lg-flex justify-content-center align-items-center justify-content-around">
                 <div>
                     <p class="text-white">Computer-controlled digital transistorized with electronic advance</p>
@@ -20,33 +46,33 @@
                     <p class="text-white">The Honda CBR models are a series of Honda <br> sport bikes first introduced in 1983. With the exception <br> of the single-cylinder CBR125R, CBR150R.</p>
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-                     Purchase
-                    </button>
-  
-                  <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            Woohoo, you're reading this text in a modal!
+                    <div>
+                      <button type="button" class="btn btn my-3 text-white" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">Purchase</button>
 
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+                    <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1"
+                          aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Honda CBR 300R
+                                      </h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                          aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    CBR 300R is a high performing bike which is available in the Bangladesh motorcycle market. Update price of CBR 300R is BDT 450,000.00.
+                                  </div>
+                                  <div class="modal-footer">
+                                      <button type="button" class="btn btn-danger"
+                                          data-bs-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-success">Save changes</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
                     
                 </div>
                 <div>
@@ -58,25 +84,217 @@
     </header>
 
     <main>
+      <!-- Bike fetured -->
 
+      <section>
+        <div class="fetured-bike mx-auto" style="width: 400px;">
+          <h1>Fetured Bikes 2021</h1>
+          
+        </div>
+        <div>
+          <h5 class="collection mx-auto" style="width: 250px;" >Best bike collection</h5>
+        </div>      
+      </section>
+      <section>
+        <div class="container d-lg-flex align-items-center justify-content-around">
+          <div class="">
+            <img class="bike-img" src="images/feature-bike-01.png" alt="">
+          </div>
+          <div>
+            <img src="images/feature-bike-01.png" alt="">
+          </div>
+          <div>
+            <img class="bike-img" src="images/feature-bike-01.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- Happy Clients -->
+
+      <section>
+       <div class="fetured-bike happy mx-auto" style="width: 400px;">
+        <h1>Happy <span class="happy-client" >Clients says</span></h1>
+       </div>
+        <div class="container">
+          <div class="card-group">
+            <div class="card  mx-3 bg-light">
+              <img class="cover card-img-top rounded-circle mx-auto" style="width: 149px; height: 149px; margin-top: 20px;" src="images/user-1.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text star">
+                  Slate helps you see how <br>
+                  many more days you need  <br> 
+                  to work to reach your financial <br>
+                  goal for the month and year.
+                </p>
+                <div class="star">
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  
+                  <div>
+                    <h6 class="text-primary">Dived Miles</h6>
+                    <h6>Banker</h6>
+                  </div>
+                </div>              
+              </div>
+              
+            </div>
+            <div class="card  mx-3 bg-light">
+              <img class="cover card-img-top rounded-circle mx-auto" style="width: 149px; height: 149px; margin-top: 20px;" src="images/user-2.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text star">
+                  Slate helps you see how <br>
+                  many more days you need  <br> 
+                  to work to reach your financial <br>
+                  goal for the month and year.
+                </p>
+                <div class="star">
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  
+                  <div>
+                    <h6 class="text-primary">Regina Miles</h6>
+                    <h6>Banker</h6>
+                  </div>
+                </div>              
+              </div>
+              
+            </div>
+           
+            <div class="card  mx-3 bg-light">
+              <img class="cover card-img-top rounded-circle mx-auto" style="width: 149px; height: 149px; margin-top: 20px;" src="images/user-3.jpg" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text star">
+                  Slate helps you see how <br>
+                  many more days you need  <br> 
+                  to work to reach your financial <br>
+                  goal for the month and year.
+                </p>
+                <div class="star">
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star cheacked"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  
+                  <div>
+                    <h6 class="text-primary">Margaret Oscar</h6>
+                    <h6>Banker</h6>
+                  </div>
+                </div>              
+              </div>
+              
+            </div>
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions -->
+
+      <section>
+        <div class="fetured-bike happy mx-auto" style="width: 600px;">
+          <h1>Frequently Asked <span class="happy-client" >Questions</span></h1>
+         </div>
+         <section class="container my-5">
+          <div class=" px-4">
+              <div class="row gx-5">
+                  <div class="col-lg-6 col-sm-12">
+                      <div class="p-3">
+                          <img class="img-fluid" src="images/faq.png" alt="">
+                      </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12">
+                      <div class="p-3">
+                          <div class="accordion gy-3" id="accordionExample">
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                          aria-expanded="true" aria-controls="collapseOne">
+                                          What are the most important things I should know about riding a bike?
+                                      </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                      data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          Safety First! Always obey the rules of the road. Obey all traffic
+                                          signals, signs, and laws. Get in the mindset of “driving” your
+                                          bike—not just “riding” your bike. This will help you be a more
+                                          focused and legally compliant bike rider.
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          How can I tell if my helmet is old and I need a new one?
+                                      </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                      data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          Bear in mind that if the helmet did its job most people would tell you that they did not even hit their head, or did not
+                                          hit their head that hard. And the thin shells on most helmets now tend to hide any dents in the foam. But if you can see
+                                          marks on the shell or measure any foam crush at all, replace the helmet.
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          My bike has been in storage is it safe to ride?
+                                      </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                      data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          The bottom line: Leaving your bike outside for a day or two won't do major damage. You may see signs of rust after a
+                                          week of neglect. After one month in bad conditions, your beloved bike parts will start to degrade.
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          What rules should I follow when riding my bike?
+                                      </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                      data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                          <strong>My 3 rules.</strong>
+                                          1.Be visible at all times. - Wear bright and visible clothes. Reflective stripes ads viability. Always stay out of blind
+                                          zones. Alert other drivers before entering their blind zone.
+                                          <br>
+                                          2. Be predictable. - Others on the road must be able to predict your next move. Give proper signals before changing a lane
+                                          or taking deviation.
+                                          <br>
+                                          3. Everyone in the road is dumb and partially blind. - Well, just imagine so and be prepared for an unexpected turn or
+                                          braking.
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      </section>
     </main>
+    <!-- footer section -->
 
-    <footer>
-
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer class="mt-5 p-3 bg-dark">
+      <p class="text-white text-center">&copy; 2020 bike. All rights reserved</p>
+  </footer>
     <!-- js bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
